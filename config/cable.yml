@@ -1,6 +1,7 @@
 development:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://127.0.0.1:6379" } %>
+  
   channel_prefix: rails-chat-tutorial_development
 
 test:
@@ -8,5 +9,6 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://127.0.0.1:6379" } %>
+  # url: <%= ENV.fetch("REDIS_URL") { "redis://127.0.0.1:6379" } %>
+  url: <%= ENV.fetch("REDISTOGO_URL") {"redis://redistogo:38c7846f723a025bd929e16ddf25cbeb@scat.redistogo.com:10492"} %>
   channel_prefix: rails-chat-tutorial_production
