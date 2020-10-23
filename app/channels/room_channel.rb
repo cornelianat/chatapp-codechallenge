@@ -6,6 +6,6 @@ class RoomChannel < ApplicationCable::Channel
   end
   def unsubscribed
     room = Room.find params[:room]
-    redsis.lrem(key_for(page.id),1,current_user.id) 
+    stop_stream_for room
   end
 end
