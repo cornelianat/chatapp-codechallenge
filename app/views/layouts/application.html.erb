@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsChatTutorial</title>
+    <title>MyChatApp</title>
     <%= csrf_meta_tags %>
   
 
@@ -10,15 +10,7 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <%= render partial: 'devise/shared/navbar' %>
-          <div class="my-3">
-            <%= yield %>
-          </div>
-        </div>
-      </div>
-    </div>
+  <%= render partial: 'devise/shared/navbar' %>
+      <%= yield %>
   </body>
 </html>

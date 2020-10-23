@@ -1,15 +1,18 @@
 <div class="row">
-    <div class="col-12 col-md-3">
+    <div class="col-12 col-md-3" style="padding:40px">
         <%= render partial:'rooms'%>
     </div>
     <div class="col">
-        <div class="alert alert-primary">
-            <h4 class="alert-heading">
-                Welcome to the CodeChallenge Chatroom!
-            </h4>
-            <p>we need to talk</p>
-            <hr/>
-            <p>you can create or join a room from the sidebar</p>
+        <div>
+            <div style="width:100%;text-align:center;padding:40px">
+                <h2 style="font-family:Poppins-Bold">
+                    Welcome to the CodeChallenge Chatroom!
+                </h2>
+                <br>
+                <h6>you can create or join a room from the sidebar</h6>
+                <%=image_tag("welcome.png", alt: "Example Image", style:"width:80%")%>
+            </div>
+            
         <div>
     </div>
 </div>

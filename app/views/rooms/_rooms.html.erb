@@ -1,13 +1,13 @@
 <div class="mb-3">
-    <%= link_to new_room_path, class: "btn btn-primary" do%>
+    <%= link_to new_room_path, class:"login100-form-btn" do%>
         Create a room
     <%end%>
 </div>
 
 <% if @rooms.present?%>
-    <nav class:"nav flex-column">
+    <nav class:"nav flex-column" style="margin-top:80px">
         <% @rooms.each do |room| %>
-            <%= link_to room.name, room_path(room), class: "nav-link room-nav-link" %>
+            <%= link_to room.name, room_path(room), class: "nav-link list-chat-room" %>
         <% end %>
     </nav>
 <% else %>
