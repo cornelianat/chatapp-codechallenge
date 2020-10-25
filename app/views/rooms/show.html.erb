@@ -11,23 +11,23 @@
     <div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
        <% @room.room_messages.each do |room_message| %>
         <div class="d-none" data-role="message-template">
-        <div class="chat-message-container">
-          <div class="row no-gutters">
-            <div class="col-auto text-center">
-              <img src="" class="avatar" alt="" data-role="user-avatar">
-            </div>
+          <div class="chat-message-container">
+            <div class="row no-gutters">
+              <div class="col-auto text-center">
+                <img src="" class="avatar" alt="" data-role="user-avatar">
+              </div>
 
-            <div class="col">
-              <div class="message-content" style="background-color:#FF4E00;color:white;border-radius:10px;border:0px">
-                <p class="mb-1" data-role="message-text" style="color:white"><%= room_message.message %></p>
-                  <div class="text-right">
-                    <small data-role="message-data"><%= room_message.created_at %></small>
-                  </div>
+              <div class="col">
+                <div class="message-content" style="background-color:#FF4E00;color:white;border-radius:10px;border:0px">
+                  <p class="mb-1" data-role="message-text" style="color:white"><%= room_message.message %></p>
+                    <div class="text-right">
+                      <small data-role="message-data"><%= room_message.created_at %></small>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="d-none" data-role="message-template">
         <% end %>
     </div>
 
