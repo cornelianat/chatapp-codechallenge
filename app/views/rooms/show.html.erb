@@ -10,6 +10,7 @@
   <div class="col-md-8">
     <div class="chat" data-channel-subscribe="room" data-room-id="<%= @room.id %>">
        <% @room.room_messages.each do |room_message| %>
+        <div class="d-none" data-role="message-template">
         <div class="chat-message-container">
           <div class="row no-gutters">
             <div class="col-auto text-center">
@@ -26,6 +27,7 @@
             </div>
           </div>
         </div>
+        <div class="d-none" data-role="message-template">
         <% end %>
     </div>
 
