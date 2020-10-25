@@ -19,9 +19,9 @@
 
           <div class="col">
             <div class="message-content" style="background-color:#FF4E00;color:white;border-radius:10px;border:0px">
-              <p class="mb-1" data-role="message-text" style="color:white"><%= room_message %></p>
+              <p class="mb-1" data-role="message-text" style="color:white"><%= room_message.message %></p>
                 <div class="text-right">
-                  <small data-role="message-date"></small>
+                  <small data-role="message-date"><%= room_message.created_at %></small>
                 </div>
             </div>
           </div>
